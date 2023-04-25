@@ -8,16 +8,9 @@ MiniProjectsVanillaJs is a repository that contains various small projects built
 
 The following projects are included in this repository:
 
-1. [Expanding Cards](./expanding-cards)
-2. [Progress Steps](./progress-steps)
-3. [Rotating Navigation](./rotating-navigation)
-4. [Hidden Search Widget](./hidden-search-widget)
-5. [Blurry Loading](./blurry-loading)
-6. [Drag N Drop](./drag-n-drop)
-7. [Auto Text Effect](./auto-text-effect)
-8. [Hoverboard](./hoverboard)
-9. [Scroll Animation](./scroll-animation)
-10. [Form Wave Animation](./form-wave-animation)
+1. [Drink Wather App]
+2. [ExpandingEffect]
+3. [ToastNotification]
 
 Each project has its own folder with all the necessary files to run it.
 
@@ -29,5 +22,5 @@ To run each project, simply navigate to its folder and open the `index.html` fil
 
 If you have any suggestions for new projects or improvements to existing ones, feel free to submit a pull request or open an issue.
 
-## License
+
 
