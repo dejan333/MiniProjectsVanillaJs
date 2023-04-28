@@ -29,7 +29,6 @@ function addNewNote(text = '') {
   <div class="main ${text ? '' : 'hidden'}"></div>
   <textarea class="${text ? 'hidden' : ''}"></textarea>
   `
-
   // Get references to the edit and delete buttons, the main content div, and the textarea element
   const editBtn = note.querySelector('.edit')
   const deleteBtn = note.querySelector('.delete')
