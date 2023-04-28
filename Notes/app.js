@@ -24,6 +24,7 @@ function addNewNote(text = '') {
   <div class="tools">
     <button class="edit"><i class="fa fa-edit"></i></button>
     <button class="delete"><i class="fa fa-trash-alt"></i></button>
+    <button class="togglePrimary"><i class="fa-sharp fa-solid fa-bullseye"></i></button>
   </div>
   <div class="main ${text ? '' : 'hidden'}"></div>
   <textarea class="${text ? 'hidden' : ''}"></textarea>
@@ -32,6 +33,7 @@ function addNewNote(text = '') {
   // Get references to the edit and delete buttons, the main content div, and the textarea element
   const editBtn = note.querySelector('.edit')
   const deleteBtn = note.querySelector('.delete')
+  const toggleBtn = note.querySelector('.togglePrimary')
   const main = note.querySelector('.main')
   const textArea = note.querySelector('textarea')
   
@@ -42,6 +44,9 @@ function addNewNote(text = '') {
   main.innerHTML = marked(text)
 
   // Add event listeners to the edit and delete buttons and the textarea to allow for editing and deletion
+  toggleBtn.addEventListener('click', () => {
+    note.classList.toggle('toggleBtn') 
+  })
   deleteBtn.addEventListener('click', () => {
     note.remove()
     updateLS()
@@ -56,10 +61,13 @@ function addNewNote(text = '') {
 
     updateLS()
   })
+  
 
   // Add the note element to the body of the page
   document.body.appendChild(note)
 }
+
+
   function updateLS(){
     const noteText = document.querySelectorAll('textarea')
 
@@ -70,15 +78,3 @@ function addNewNote(text = '') {
     localStorage.setItem('notes', JSON.stringify(notes))
   }
 
-  // experimental//////////////////////////////
-  const experimental = document.querySelector('.experimental')
-  
-  experimental.addEventListener('click', () => {
-    document.body.classList.toggle('dark');
-    
-
-  })
-  experimental.addEventListener('mouseover', () => {
-    console.log('yyyy')
-  })
-  // experimental//////////////////////////////
