@@ -3,13 +3,9 @@
 # MiniProjectsVanillaJs
 
 MiniProjectsVanillaJs is a repository that contains various small projects built using Vanilla JavaScript, HTML and CSS. These projects were built following the tutorials by Traversy Media[50ProjectsIn50Days] to improve my skills in these technologies and serve as a reference for anyone who is looking to learn or practice building small projects using these technologies.
-## Projects
 
-The following projects are included in this repository:
 
-1. [Drink Wather App]
-2. [ExpandingEffect]
-3. [ToastNotification]
+
 
 Each project has its own folder with all the necessary files to run it.
 
