@@ -6,7 +6,8 @@
 }
 
 body {
-  background-color: #efedd6;
+  background-color: #8ee022;
+  color: #333;
   font-family: 'Roboto', sans-serif;
   margin:0;
   display: flex;
@@ -17,9 +18,13 @@ body {
 }
 h1 {
   margin:10px;
+  background: #fff;
+  padding: 13px;
+  border-radius: 33px;
+  box-shadow: 2px 3px  5px green;
 }
 .box {
-  background-color: steelblue;
+  background-color: rgb(25, 47, 65);
   color:white;
   display: flex;
   align-items: center;
@@ -28,14 +33,15 @@ h1 {
   height: 200px;
   margin: 10px;
   border-radius: 33px;
-  box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 2px 4px 5px rgba(40, 0, 0, 0.9);
   transform: translateX(400%);
   transition: transform 0.5s ease;
 }
 .box:nth-of-type(even){
   transform: translateX(-400%);
-  background-color: aqua;
+  background-color: rgb(103, 14, 247);
 }
+
 .box.show{
   transform: translateX(0);
 }
